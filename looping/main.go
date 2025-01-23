@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import "looping/src"
 
 func main() {
-	fmt.Println("Main")
+	const (
+		count      = 1
+		countLimit = 10
+	)
+
+	src.ForLoop(count, countLimit)
+	src.ConditionLoop(count, countLimit)
+	src.PlainLoop(count, countLimit)
+	src.RangeLoop(count, countLimit)
 }
