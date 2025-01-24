@@ -10,4 +10,9 @@ func DeleteMap() {
 
 	fmt.Println(len(data))
 	fmt.Println(data)
+
+	delete(data, "january")
+
+	fmt.Println(len(data))
+	fmt.Println(data)
 }
